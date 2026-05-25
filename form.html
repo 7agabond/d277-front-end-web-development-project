@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <title>Texas Offices Form</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html">Texas Offices</a></h1>
+      <a href="index.html"><img src="texas-logo.png" alt="Logo of Texas" /></a>
+    </header>
+    <nav>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="capital.html">Austin</a></p>
+      <p><a href="laredo.html">Laredo</a></p>
+      <p><a href="san-antonio.html">San Antonio</a></p>
+      <p><a href="form.html">Form</a></p>
+    </nav>
+        <a href="index.html">
+      <button class="homeButton">Home</button>
+    </a>
+    <div class="formContainer">
+      <div></div>
+      <main>
+        <p>
+          <h3 id="formH3">Welcome to our list! Please follow instructions:</h3>
+            <ol id="formOL">
+              <li>Enter your first name</li>
+              <li>Enter your last name</li>
+              <li>Enter your email</li>
+              <li>Enter your email again to verify</li>
+              <li>Write down any questions you have or any extra feedback, and we'll get back to you!</li>
+            </ol>
+        </p>     
+        <h1>Form</h1>
+        <form name="myForm" onsubmit="return validateForm()">
+          <p>
+            <label for="firstName">First Name: </label>
+          </p>
+          <p>
+            <input type="text" name="firstName" placeholder="John" />
+          </p>
+          <p>
+            <label for="lastName">Last Name: </label>
+          </p>
+          <p>
+            <input type="text" name="lastName" placeholder="Smith" />
+          </p>
+          <p>
+            <label for="email">Email: </label>
+          </p>
+          <p>
+            <input
+              id="emailOrig"
+              type="email"
+              name="email"
+              placeholder="johnsmith@email.com"
+            />
+          </p>
+          <p>
+            <label for="emailVerif">Verify Email:</label>
+          </p>
+          <p>
+            <input
+              id="emailVerif"
+              type="email"
+              name="emailVerif"
+              placeholder="johnsmith@email.com"
+            />
+          </p>
+          <p>
+            <label for="askQuestion">Ask A Question:</label>
+          </p>
+          <p>
+            <textarea
+              name="askQuestion"
+              rows="4"
+              cols="50"
+              placeholder="Ask question here!"
+            ></textarea>
+          </p>
+          <p>
+            <input type="submit" value="Submit" />
+          </p>
+        </form>
+        <h3></h3>
+        <p>
+          <h3>You can also let us know if you want us to work on a site for other states! We will:</h3>
+          <ul id="formUL">
+            <li>Add any other largely suggested sections and features</li>
+            <li>Add cities with multiple recommendations</li>
+            <li>Add more fun facts</li>
+          </ul>
+          <table>
+            <legend>Previous, current, and future projects from recommendations</legend>
+            <tr>
+              <th>Previous Recommendations</th>
+              <th>Current Recommendations</th>
+              <th>Future Recommendations</th>
+            </tr>
+            <tr>
+              <td>San Antonio, TX</td>
+              <td>Florida</td>
+              <td>Dallas, TX</td>
+            </tr>
+            <tr>
+              <td>Updates Blog</td>
+              <td>New York</td>
+              <td>Comments Section</td>
+            </tr>
+            <tr>
+              <td>California</td>
+              <td>City Attractions</td>
+              <td>Travel Collabs</td>
+            </tr>
+          </table>
+        </p>
+        <div class="footerItems">
+          <p>Texas Offices</p>
+          <img src="texas-logo.png" alt="">
+        </div>
+      </main>
+      <div></div>
+    </div>
+  </body>
+</html>
